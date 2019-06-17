@@ -1,6 +1,6 @@
-# NPM-build-environment
+# HR Solutions Website
 
-A simple front end build environment using NPM as the build tool
+SPA for HR solutions
 
 ## Getting Started
 
@@ -34,9 +34,6 @@ npm run dev
 ## Contributing
 
 To contribute to this repo...
-## Versioning
-
-We use [SemVer](http://semver.org/) for versioning. For the versions available, see the [tags on this repository](https://github.com/rapid7/rapid7-product-logos/tags).
 
 ## License
 
