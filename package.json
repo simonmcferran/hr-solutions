@@ -1,0 +1,43 @@
+{
+  "name": "NPM-build-environment",
+  "version": "0.0.0",
+  "description": "Basic HTML build using NPM as a build tool",
+  "main": "index.js",
+  "contributors": [
+    {
+      "name": "Simon McFerran",
+      "email": "simonmcferran@hotmail.com"
+    }
+  ],
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "author": "Simon McFerran",
+  "license": "MIT",
+  "homepage": "",
+  "devDependencies": {
+    "concurrently": "^4.0.1",
+    "copyfiles": "^2.1.0",
+    "jshint": "^2.9.6",
+    "lite-server": "^2.4.0",
+    "mocha": "^5.2.0",
+    "node-sass": "^4.10.0",
+    "uglify-js": "^3.4.9"
+  },
+  "scripts": {
+    "start": "concurrently -k \"npm run dev\" \"npm run watch-css\"",
+    "dev": "lite-server",
+    "db": "json-server --watch db.json --port 3005",
+    "build-js": "mkdir -p dist/js && uglifyjs src/js/*.js -m -o dist/js/app.js",
+    "lint": "lint jshint src/**/**.js",
+    "copy": "npm run copy:html",
+    "copy:html": "copyfiles -f src/*.html dist",
+    "build-css": "node-sass src/scss/ -o src/css ",
+    "watch-css": "nodemon -e scss -x \"npm run build-css\"",
+    "test": "mocha test",
+    "pretest": "npm run lint",
+    "posttest": "echo the test has been run!",
+    "bash": "Location of the bash/shell script file"
+  }
+}
