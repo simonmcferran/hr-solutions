@@ -1,0 +1,67 @@
+.keynote {
+  text-align: center;
+  padding: 60px 0;
+background-color: #FCFCFC;
+  h2 {
+    font-size: 1.35em;
+    line-height: 1.5;
+    font-weight: 500;
+    letter-spacing: 0;
+    color: #161922;
+    margin: 0 0 15px 0;
+  }
+
+  p {
+    font-size: 0.85em;
+    line-height: 1.75;
+    font-weight: 300;
+    color: #626262;
+  }
+
+
+  .icon {
+    i {
+      color: #3e95e4;
+    }
+
+    &_wrapper {
+      width: 110px;
+      height: 110px;
+      text-align: center;
+      line-height: 110px;
+      font-size: 50px;
+      position: relative;
+      overflow: hidden;
+      margin: 0 auto 15px;
+      border-width: 8px;
+      border-style: solid;
+      display: block;
+      border-radius: 100%;
+      border-color: #f8f8f8;
+      background-image: url("../../assets/img/stripes_3_b.png");
+
+      &:before {
+        content: "";
+        display: block;
+        width: 100%;
+        height: 100%;
+        border-width: 1px;
+        border-style: solid;
+        position: absolute;
+        left: 0;
+        top: 0;
+        border-radius: 100%;
+        box-sizing: border-box;
+        border-color: #e2e2e2;
+      }
+    }
+
+    &_box {
+      position: relative;
+      padding: 10px 0;
+
+
+    }
+
+  }
+}
