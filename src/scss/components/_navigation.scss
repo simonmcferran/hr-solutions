@@ -9,6 +9,7 @@ nav {
       justify-content: flex-end;
       align-items: center;
     }
+
     li:not(:last-child) {
       a {
         border-width: 0 1px 0 0;
@@ -28,6 +29,7 @@ nav {
       color: #6a6c74;
       font-weight: 300;
       transition: color 0.4s ease-out;
+
       &:hover {
         color: #3e95e4;
       }

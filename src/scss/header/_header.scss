@@ -40,7 +40,7 @@
   &Social {
     display: flex;
     justify-content: flex-end;
-
+a {padding: 10px}
     i {
       color: #bbbbbb;
       transition: color 0.4s ease-out;
@@ -48,7 +48,7 @@
     }
 
     li:not(:last-child) {
-      margin-right: 20px;
+      margin-right: 5px;
     }
 
     a:hover i {

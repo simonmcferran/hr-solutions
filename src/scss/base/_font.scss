@@ -1,8 +1,17 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700&display=swap');
 
 $base-font-size: 16px;
 
 body {
   font-family: "Roboto", Arial, Tahoma, sans-serif;
   font-size: $base-font-size;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Montserrat', sans-serif;
+}
+
+.highlight {
+  color: #3e95e4;
 }
