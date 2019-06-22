@@ -5,6 +5,31 @@ footer {
 
 
 .footer {
+  &Top {
+    text-align: center;
+    background-color: #25272d;
+
+    h6 {
+      font-size: 1.1em;
+      color: #cccccc;
+      font-family: "Roboto", Arial, Tahoma, sans-serif;
+      margin: 1em 0;
+      font-weight: 300;
+
+      a {
+        color: #ffffff;
+        text-decoration: none;
+        font-weight: 600;
+        transition: color 0.4s ease-out;
+
+        &:hover {
+          color: #68bff6;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+
   &Base {
     height: 80px;
     border-top: 1px solid rgba(255, 255, 255, .1);
@@ -36,5 +61,65 @@ footer {
         text-decoration: none;
       }
     }
+  }
+
+  &Col {
+    padding: 45px 0;
+    img {
+      width: 150px;
+    }
+
+    p {
+      font-size: 0.9em;
+      line-height: 1.75;
+      vertical-align: text-top;
+    }
+
+    h5 {
+      margin: 4px 0 26px;
+      color: white;
+      font-size: 1.1em;
+    }
+
+    .noTitle {
+      padding-top: 35px;
+    }
+
+    &Two, &Three {
+      p {
+        border-left: 3px solid #25272d;
+        padding-left: 30px;
+        padding-bottom: 5px;
+        position: relative;
+        color: #fff;
+        font-weight: 400;
+
+        &:after {
+          position: absolute;
+          top: 0;
+          left: -10px;
+          content: "";
+          width: 10px;
+          height: 10px;
+          border-radius: 50%;
+          border-width: 3px;
+          border-color: #3e95e4;
+          background-color: transparent;
+          border-style: solid;
+        }
+
+        a {
+          color: #fff;
+          transition: color 0.4s ease-out;
+          text-decoration: none;
+
+          &:hover {
+            color: #3e95e4;
+            cursor: pointer;
+          }
+        }
+      }
+    }
+
   }
 }

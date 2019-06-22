@@ -10,9 +10,6 @@ body {
   top: 0;
   font-size: 100%; }
 
-* {
-  color: #333447; }
-
 h1 {
   font-size: 2.5rem; }
 
@@ -180,6 +177,8 @@ h1, h2, h3, h4, h5, h6 {
 
 .highlight {
   color: #3e95e4; }
+  .highlight b {
+    font-weight: 600; }
 
 button:focus {
   outline: none; }
@@ -304,6 +303,24 @@ footer {
   background-color: #292b32;
   color: #cccccc; }
 
+.footerTop {
+  text-align: center;
+  background-color: #25272d; }
+  .footerTop h6 {
+    font-size: 1.1em;
+    color: #cccccc;
+    font-family: "Roboto", Arial, Tahoma, sans-serif;
+    margin: 1em 0;
+    font-weight: 300; }
+    .footerTop h6 a {
+      color: #ffffff;
+      text-decoration: none;
+      font-weight: 600;
+      transition: color 0.4s ease-out; }
+      .footerTop h6 a:hover {
+        color: #68bff6;
+        cursor: pointer; }
+
 .footerBase {
   height: 80px;
   border-top: 1px solid rgba(255, 255, 255, 0.1); }
@@ -326,3 +343,44 @@ footer {
   .footerSocial li a {
     color: #3e95e4;
     text-decoration: none; }
+
+.footerCol {
+  padding: 45px 0; }
+  .footerCol img {
+    width: 150px; }
+  .footerCol p {
+    font-size: 0.9em;
+    line-height: 1.75;
+    vertical-align: text-top; }
+  .footerCol h5 {
+    margin: 4px 0 26px;
+    color: white;
+    font-size: 1.1em; }
+  .footerCol .noTitle {
+    padding-top: 35px; }
+  .footerColTwo p, .footerColThree p {
+    border-left: 3px solid #25272d;
+    padding-left: 30px;
+    padding-bottom: 5px;
+    position: relative;
+    color: #fff;
+    font-weight: 400; }
+    .footerColTwo p:after, .footerColThree p:after {
+      position: absolute;
+      top: 0;
+      left: -10px;
+      content: "";
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+      border-width: 3px;
+      border-color: #3e95e4;
+      background-color: transparent;
+      border-style: solid; }
+    .footerColTwo p a, .footerColThree p a {
+      color: #fff;
+      transition: color 0.4s ease-out;
+      text-decoration: none; }
+      .footerColTwo p a:hover, .footerColThree p a:hover {
+        color: #3e95e4;
+        cursor: pointer; }
