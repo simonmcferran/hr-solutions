@@ -1,0 +1,23 @@
+button {
+  &:focus {
+    outline: none;
+  }
+}
+
+.button {
+  &Primary {
+    background-color: #3e95e4;
+    border-radius: 5px;
+    border: none;
+    font-size: 0.95em;
+    color: white;
+    height: 54px;
+    padding: 0 25px;
+    transition: background-color 0.4s ease-out;
+
+    &:hover {
+      background-color: #68bff6;
+      cursor: pointer;
+    }
+  }
+}

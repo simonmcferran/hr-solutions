@@ -175,6 +175,50 @@ body {
   font-family: "Roboto", Arial, Tahoma, sans-serif;
   font-size: 16px; }
 
+button:focus {
+  outline: none; }
+
+.buttonPrimary {
+  background-color: #3e95e4;
+  border-radius: 5px;
+  border: none;
+  font-size: 0.95em;
+  color: white;
+  height: 54px;
+  padding: 0 25px;
+  transition: background-color 0.4s ease-out; }
+  .buttonPrimary:hover {
+    background-color: #68bff6;
+    cursor: pointer; }
+
+nav.mainNav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center; }
+
+nav.mainNav li:not(:last-child) a {
+  border-width: 0 1px 0 0; }
+
+nav.mainNav a {
+  text-decoration: none;
+  font-size: 0.95em;
+  display: block;
+  line-height: 60px;
+  padding: 0 20px;
+  white-space: nowrap;
+  border-width: 0;
+  border-style: solid;
+  border-color: rgba(0, 0, 0, 0.05);
+  color: #6a6c74;
+  font-weight: 300;
+  transition: color 0.4s ease-out; }
+  nav.mainNav a:hover {
+    color: #3e95e4; }
+
 .headerActions {
   font-size: 0.8em;
   background-color: #292b32;
@@ -212,3 +256,14 @@ body {
     margin-right: 20px; }
   .headerSocial a:hover i {
     color: #ffffff; }
+
+.headerBrand {
+  display: flex;
+  flex: 1; }
+  .headerBrand img {
+    width: 200px; }
+
+.headerNavigation {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end; }
