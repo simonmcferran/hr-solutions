@@ -1,0 +1,57 @@
+.header {
+
+  &Actions {
+    font-size: 0.8em;
+    background-color: #292b32;
+    height: 45px;
+    letter-spacing: 0.02em;
+
+    ul {
+      list-style: none;
+      display: flex;
+      flex-direction: row;
+      margin: 0;
+      padding: 0;
+    }
+
+    li {
+      color: #949599;
+
+      a {
+        color: #3e95e4;
+        text-decoration: none;
+      }
+    }
+  }
+
+  &Contacts {
+    li:not(:last-child) {
+      margin-right: 20px;
+    }
+    i {
+      color: #949599;
+      transition: color 0.4s ease-out;
+      font-size: 0.9em;
+      margin-right: 5px;
+    }
+  }
+
+  &Social {
+    display: flex;
+    justify-content: flex-end;
+
+    i {
+      color: #bbbbbb;
+      transition: color 0.4s ease-out;
+      font-size: 1.2em;
+    }
+
+    li:not(:last-child) {
+      margin-right: 20px;
+    }
+
+    a:hover i {
+      color: #ffffff;
+    }
+  }
+}
