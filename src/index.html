@@ -16,7 +16,7 @@
   <link rel="apple-touch-icon" sizes="144x144" href="assets/favicon.ico/apple-icon-144x144.png">
   <link rel="apple-touch-icon" sizes="152x152" href="assets/favicon.ico/apple-icon-152x152.png">
   <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon.ico/apple-icon-180x180.png">
-  <link rel="icon" type="image/png" sizes="192x192"  href="assets/favicon.ico/android-icon-192x192.png">
+  <link rel="icon" type="image/png" sizes="192x192" href="assets/favicon.ico/android-icon-192x192.png">
   <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon.ico/favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="96x96" href="assets/favicon.ico/favicon-96x96.png">
   <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon.ico/favicon-16x16.png">
@@ -31,7 +31,8 @@
             <ul>
               <li>Have any questons?</li>
               <li><i class="fas fa-phone"></i><a href="tel:07971762455">07971 762 455</a></li>
-              <li><i class="far fa-envelope"></i><a href="mailto:enquiries@hrsolutions-ni.com">enquiries@hrsolutions-ni.com</a></li>
+              <li><i class="far fa-envelope"></i><a href="mailto:enquiries@hrsolutions-ni.com">enquiries@hrsolutions-ni.com</a>
+              </li>
             </ul>
           </div>
         </div>
@@ -81,7 +82,7 @@
             of your <span class="highlight">people</span></h1>
           <h3>We help clients to grow their businesses by ensuring<br/>
             that their people are engaged and motivated to deliver</h3>
-          <button  onclick="buttonClick('#contact-us')" class="buttonPrimary">Work With Us</button>
+          <button onclick="buttonClick('#contact-us')" class="buttonPrimary">Work With Us</button>
         </div>
       </div>
     </div>
@@ -142,16 +143,24 @@
   <div class="container">
     <div class="row">
       <div class="col-3">
-        <img src="assets/img/client-1.png"/>
-      </div>
-      <div class="col-3 is-active">
-        <img src="assets/img/client-2.png"/>
-      </div>
-      <div class="col-3">
-        <img src="assets/img/client-3.png"/>
+        <button onclick="clientClick(this, 'cli1')" class="buttonInvisible">
+          <img src="assets/img/client-1.png"/>
+        </button>
       </div>
       <div class="col-3">
-        <img src="assets/img/client-4.png"/>
+        <button onclick="clientClick(this, 'cli2')" class="buttonInvisible is-active">
+          <img src="assets/img/client-2.png"/>
+        </button>
+      </div>
+      <div class="col-3">
+        <button onclick="clientClick(this, 'cli3')" class="buttonInvisible">
+          <img src="assets/img/client-3.png"/>
+        </button>
+      </div>
+      <div class="col-3">
+        <button onclick="clientClick(this, 'cli4')" class="buttonInvisible">
+          <img src="assets/img/client-4.png"/>
+        </button>
       </div>
     </div>
   </div>
@@ -257,7 +266,7 @@
       <div class="row">
         <div class="col-12"><h6>If you are interested in <span class="highlight"><b>any</b></span> of our services,
           don't
-          hesitate to <a  onclick="buttonClick('#contact-us')" href="#">get in touch</a></h6></div>
+          hesitate to <a onclick="buttonClick('#contact-us')" href="#">get in touch</a></h6></div>
       </div>
     </div>
   </section>

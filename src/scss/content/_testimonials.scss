@@ -21,16 +21,21 @@
     background-color: #ffffff;
 
     .col-3 {
+      margin-top: 0;
+    }
+
+    .buttonInvisible {
       display: flex;
       position: relative;
       justify-content: center;
       align-items: center;
-      margin-top: 0;
       transition: opacity 0.4s ease-out;
+
       &.is-active {
         img {
           opacity: 1;
         }
+
         &:before {
           top: -2px;
           left: 50%;

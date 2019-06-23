@@ -21,4 +21,15 @@ button {
       cursor: pointer;
     }
   }
+
+  &Invisible {
+    background: none;
+    border: none;
+    -webkit-appearance: none;
+    border-radius: 0;
+
+    &:hover {
+      cursor: pointer;
+    }
+  }
 }

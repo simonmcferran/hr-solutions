@@ -1,33 +1,4 @@
-/**
- * Will gracefuly scroll the page
- * This function will scroll the page using
- * an `ease-in-out` effect.
- *
- * You can use it to scroll to a given element, as well.
- * To do so, pass the element instead of a number as the position.
- * Optionally, you can pass a `queryString` for an element selector.
- *
- * The default duration is half a second (500ms)
- *
- * This function returns a Promise that resolves as soon
- * as it has finished scrolling. If a selector is passed and
- * the element is not present in the page, it will reject.
- *
- * EXAMPLES:
- *
- * ```js
- * window.scrollPageTo('#some-section', 2000);
- * window.scrollPageTo(document.getElementById('some-section'), 1000);
- * window.scrollPageTo(500); // will scroll to 500px in 500ms
- * ```
- *
- * @returns {Promise}
- * @param {HTMLElement|Number|Selector} Target
- * @param {Number} Duration [default=500]
- *
- * Inspired by @andjosh's work
- *
- */
+
 function scrollPageTo (to, duration=500) {
     //t = current time
     //b = start value
@@ -71,6 +42,19 @@ function scrollPageTo (to, duration=500) {
 
 const buttonClick = (target) => {
     window.scrollPageTo(target, 400)
+};
+
+const clientClick = (i, client ) => {
+    const currClassList = i.classList;
+    const arr = Array.from(document.getElementsByClassName('buttonInvisible'));
+    if (!currClassList.contains('is-active')) {
+        stripActive(arr);
+        currClassList.add('is-active');
+    }
+};
+
+const stripActive = (arr) => {
+    return [...arr].filter(element => element.classList.remove('is-active'))
 };
 
 const today = new Date();

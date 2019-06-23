@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Roboto:100,100i,300i,300,400,500,700,900&display=swap");
 @import url("https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700&display=swap");
 html,
 body {
@@ -195,6 +195,14 @@ button:focus {
   font-weight: 300; }
   .buttonPrimary:hover {
     background-color: #68bff6;
+    cursor: pointer; }
+
+.buttonInvisible {
+  background: none;
+  border: none;
+  -webkit-appearance: none;
+  border-radius: 0; }
+  .buttonInvisible:hover {
     cursor: pointer; }
 
 nav.mainNav ul {
@@ -423,15 +431,16 @@ nav.mainNav a {
   padding: 0;
   background-color: #ffffff; }
   .testimonial-logos .col-3 {
+    margin-top: 0; }
+  .testimonial-logos .buttonInvisible {
     display: flex;
     position: relative;
     justify-content: center;
     align-items: center;
-    margin-top: 0;
     transition: opacity 0.4s ease-out; }
-    .testimonial-logos .col-3.is-active img {
+    .testimonial-logos .buttonInvisible.is-active img {
       opacity: 1; }
-    .testimonial-logos .col-3.is-active:before {
+    .testimonial-logos .buttonInvisible.is-active:before {
       top: -2px;
       left: 50%;
       border-style: solid;
