@@ -33,6 +33,16 @@ footer {
   &Base {
     height: 80px;
     border-top: 1px solid rgba(255, 255, 255, .1);
+    a {
+      color: #cccccc;
+      font-weight: 400;
+      transition: color 0.4s ease-out;
+      text-decoration: none;
+      &:hover {
+        color: #ffffff;
+        cursor: pointer;
+      }
+    }
   }
 
   &Copyright {
