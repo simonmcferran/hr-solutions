@@ -45,16 +45,27 @@ const buttonClick = (target) => {
 };
 
 const clientClick = (i, client ) => {
+    console.log(client);
     const currClassList = i.classList;
-    const arr = Array.from(document.getElementsByClassName('buttonInvisible'));
+    const arrQuote = Array.from(document.getElementsByClassName('client-quote-item'));
+    const arrLogo = Array.from(document.getElementsByClassName('buttonInvisible'));
     if (!currClassList.contains('is-active')) {
-        stripActive(arr);
+        stripActive(arrLogo);
         currClassList.add('is-active');
     }
+    setActiveQuote(arrQuote, client);
 };
 
-const stripActive = (arr) => {
-    return [...arr].filter(element => element.classList.remove('is-active'))
+const stripActive = (arrLogo) => {
+    return [...arrLogo].filter(element => element.classList.remove('is-active'))
+};
+
+const setActiveQuote = (arrQuote, client) => {
+    const el = document.getElementById(client);
+    if (el && !el.classList.contains('is-active')) {
+        [...arrQuote].filter(element => element.classList.remove('is-active'))
+        el.classList.add('is-active');
+    }
 };
 
 const today = new Date();

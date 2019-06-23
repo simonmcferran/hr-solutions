@@ -463,6 +463,14 @@ nav.mainNav a {
   text-align: center;
   padding: 60px 0;
   background-color: #f2f3f5; }
+  .testimonial-quote .client-quote-list {
+    margin: 0;
+    padding: 0;
+    list-style: none; }
+    .testimonial-quote .client-quote-list li {
+      display: none; }
+      .testimonial-quote .client-quote-list li.is-active {
+        display: block; }
   .testimonial-quote blockquote {
     font-size: 1.5em;
     line-height: 1.5;

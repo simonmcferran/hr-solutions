@@ -66,6 +66,18 @@
     padding: 60px 0;
     background-color: #f2f3f5;
 
+    .client-quote-list {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+      li {
+        display: none;
+        &.is-active {
+          display: block;
+        }
+      }
+    }
+
     blockquote {
       font-size: 1.5em;
       line-height: 1.5;
