@@ -225,29 +225,6 @@ nav.mainNav a {
   nav.mainNav a:hover {
     color: #3e95e4; }
 
-.heroBanner {
-  background-image: url("../../assets/img/hero-banner.jpg");
-  background-position: bottom center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-color: #292b32; }
-  .heroBanner h1 {
-    color: #ffffff;
-    font-size: 3.3em;
-    font-weight: 400;
-    line-height: 1.25;
-    max-width: 530px;
-    margin: 0 0 0.5em; }
-  .heroBanner h3 {
-    font-size: 1.3em;
-    color: white;
-    margin: 0 0 2em;
-    font-weight: 300;
-    line-height: 1.5;
-    font-family: "Roboto", Arial, Tahoma, sans-serif; }
-  .heroBanner .bannerInfo {
-    padding: 4em 0; }
-
 .socialIcons {
   display: flex;
   justify-content: flex-end; }
@@ -290,7 +267,7 @@ nav.mainNav a {
 
 .headerBrand {
   display: flex;
-  flex: 1; }
+  height: 60px; }
   .headerBrand img {
     width: 200px; }
 
@@ -298,6 +275,29 @@ nav.mainNav a {
   display: flex;
   flex-direction: row;
   justify-content: flex-end; }
+
+.heroBanner {
+  background-image: url("../../assets/img/hero-banner.jpg");
+  background-position: bottom center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: #292b32; }
+  .heroBanner h1 {
+    color: #ffffff;
+    font-size: 3.3em;
+    font-weight: 400;
+    line-height: 1.25;
+    max-width: 530px;
+    margin: 0 0 0.5em; }
+  .heroBanner h3 {
+    font-size: 1.3em;
+    color: white;
+    margin: 0 0 2em;
+    font-weight: 300;
+    line-height: 1.5;
+    font-family: "Roboto", Arial, Tahoma, sans-serif; }
+  .heroBanner .bannerInfo {
+    padding: 4em 0; }
 
 .keynote {
   text-align: center;
@@ -348,6 +348,64 @@ nav.mainNav a {
   .keynote .icon_box {
     position: relative;
     padding: 10px 0; }
+
+.service-list {
+  padding-top: 80px;
+  padding-bottom: 60px;
+  background-color: #3e414c;
+  background-image: url("../../assets/img/home_betheme_sectionbg3.jpg");
+  background-repeat: no-repeat;
+  background-position: center top;
+  color: white;
+  text-align: center; }
+  .service-list-intro {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+    padding-bottom: 35px; }
+  .service-list-cta.col-12 {
+    margin-top: 35px; }
+  .service-list h6 {
+    display: block;
+    margin: 0 0 7px 0;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 0.85em;
+    color: #DEDEDE;
+    font-weight: 300; }
+  .service-list h2 {
+    font-size: 2.6em;
+    color: #3e95e4;
+    margin: 0;
+    font-weight: 100;
+    font-family: "Roboto", Arial, Tahoma, sans-serif; }
+  .service-list button {
+    margin: 0 auto; }
+  .service-list ul {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    text-align: left;
+    list-style: none; }
+  .service-list li {
+    min-height: 90px;
+    display: flex;
+    align-items: center;
+    font-weight: 300;
+    font-size: 0.85em;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+    width: 100%; }
+  .service-list i {
+    color: #3e95e4;
+    margin-right: 10px;
+    font-size: 2.2em; }
+  .service-list .icon-wrap {
+    margin-right: 10px;
+    min-width: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center; }
 
 footer {
   background-color: #292b32;
