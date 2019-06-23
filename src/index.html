@@ -59,20 +59,20 @@
           <div class="headerNavigation vertical-center">
             <nav class="mainNav ">
               <ul>
-                <li class="active"><a href="#">Who we are</a></li>
-                <li><a href="#">What we do</a></li>
-                <li><a href="#">Services we offer</a></li>
-                <li><a href="#">Our Clients</a></li>
+                <li class="active"><a onclick="buttonClick('#who-we-are')" href="#">Who we are</a></li>
+                <li><a onclick="buttonClick('#what-we-do')" href="#">What we do</a></li>
+                <li><a onclick="buttonClick('#our-services')" href="#">Services we offer</a></li>
+                <li><a onclick="buttonClick('#our-clients')" href="#">Our Clients</a></li>
               </ul>
             </nav>
-            <button class="buttonPrimary">Contact Us</button>
+            <button onclick="buttonClick('#contact-us')" class="buttonPrimary">Contact Us</button>
           </div>
         </div>
       </div>
     </div>
   </section>
 </header>
-<section class="heroBanner">
+<section id="who-we-are" class="heroBanner">
   <div class="container vertical-center">
     <div class="row">
       <div class="col-12">
@@ -81,13 +81,13 @@
             of your <span class="highlight">people</span></h1>
           <h3>We help clients to grow their businesses by ensuring<br/>
             that their people are engaged and motivated to deliver</h3>
-          <button class="buttonPrimary">Work With Us</button>
+          <button  onclick="buttonClick('#contact-us')" class="buttonPrimary">Work With Us</button>
         </div>
       </div>
     </div>
   </div>
 </section>
-<section class="keynote">
+<section id="what-we-do" class="keynote">
   <div class="container">
     <div class="row">
       <div class="col-4 ">
@@ -129,7 +129,7 @@
     </div>
   </div>
 </section>
-<section class="testimonial-title">
+<section id="our-clients" class="testimonial-title">
   <div class="container">
     <div class="row">
       <div class="col-12">
@@ -176,7 +176,7 @@
     </div>
   </div>
 </section>
-<section class="service-list">
+<section id="our-services" class="service-list">
   <div class="container vertical-center">
     <div class="row">
       <div class="col-12">
@@ -246,18 +246,18 @@
         </ul>
       </div>
       <div class="col-12 service-list-cta">
-        <button class="buttonPrimary">Get in Touch</button>
+        <button onclick="buttonClick('#contact-us')" class="buttonPrimary">Get in Touch</button>
       </div>
     </div>
   </div>
 </section>
-<footer>
+<footer id="contact-us">
   <section class="footerTop">
     <div class="container">
       <div class="row">
         <div class="col-12"><h6>If you are interested in <span class="highlight"><b>any</b></span> of our services,
           don't
-          hesitate to <a href="#">get in touch</a></h6></div>
+          hesitate to <a  onclick="buttonClick('#contact-us')" href="#">get in touch</a></h6></div>
       </div>
     </div>
   </section>
