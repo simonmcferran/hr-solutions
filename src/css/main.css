@@ -285,7 +285,7 @@ nav.mainNav a {
   justify-content: flex-end; }
 
 .heroBanner {
-  background-image: url("../../assets/img/hero-banner.jpg");
+  background-image: url("assets/img/hero-banner.jpg");
   background-position: bottom center;
   background-repeat: no-repeat;
   background-size: cover;
