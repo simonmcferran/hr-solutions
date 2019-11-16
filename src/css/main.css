@@ -285,7 +285,7 @@ nav.mainNav a {
   justify-content: flex-end; }
 
 .heroBanner {
-  background-image: url("../assets/img/hero-banner.jpg");
+  background-image: url("../../assets/img/hero-banner.jpg");
   background-position: bottom center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -441,7 +441,7 @@ nav.mainNav a {
     .testimonial-logos .buttonInvisible.is-active img {
       opacity: 1; }
     .testimonial-logos .buttonInvisible.is-active:before {
-      top: -2px;
+      top: -10px;
       left: 50%;
       border-style: solid;
       content: " ";
