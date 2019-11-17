@@ -28,11 +28,15 @@
   <!-- Global site tag (gtag.js) - Google Analytics -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=UA-5889774-22"></script>
   <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
+    window.dataLayer = window.dataLayer || [];
 
-      gtag('config', 'UA-5889774-22');
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+
+    gtag('js', new Date());
+
+    gtag('config', 'UA-5889774-22');
   </script>
 </head>
 <body>
@@ -67,6 +71,13 @@
       <div class="row">
         <div class="col-4">
           <div class="headerBrand">
+            <div class="mobileNavigation">
+              <button id="mobNavBtn" onclick="toggleMobileNav()" class="hamburger hamburger--spring" type="button">
+              <span class="hamburger-box">
+                <span class="hamburger-inner"></span>
+              </span>
+              </button>
+            </div>
             <img src="assets/img/HR-Solutions-Logo.svg">
           </div>
         </div>
@@ -126,8 +137,8 @@
           </div>
         </div>
         <h2>HR consultancy &amp; Training</h2>
-        <p>Our approach is bespoke, tailored to your business and when you need it.  Consultation targets the areas
-          specific to your business needs such as cost-reduction, succession planning and restructuring.  Our unique
+        <p>Our approach is bespoke, tailored to your business and when you need it. Consultation targets the areas
+          specific to your business needs such as cost-reduction, succession planning and restructuring. Our unique
           training seminars develop your people in line with business goals.</p>
       </div>
       <div class="col-4">
@@ -139,7 +150,7 @@
           </div>
         </div>
         <h2>People Management</h2>
-        <p>We take the stress out of managing your people.  We guide through the full cycle of employing people in your
+        <p>We take the stress out of managing your people. We guide through the full cycle of employing people in your
           business; from recruitment, training, performance management, grievance and discipline, we ensure you are
           safe and complaint.</p>
       </div>
@@ -199,7 +210,7 @@
           <ul class="client-quote-list">
             <li id="cli1" class="is-active client-quote-item">
               <blockquote>
-                HR Solutions NI has been a practical help to our business.  From creating contracts of employment to
+                HR Solutions NI has been a practical help to our business. From creating contracts of employment to
                 handling performance reviews I can recommend the service to any business.
               </blockquote>
               <hr/>
@@ -209,7 +220,7 @@
             <li id="cli2" class="client-quote-item">
               <blockquote>
                 HR Solutions NI has provided first class consultancy for our business on many areas and has guided us
-                step by step through regulations.  I can focus on running the business, and rely on my Consultant to
+                step by step through regulations. I can focus on running the business, and rely on my Consultant to
                 handle the situation on my behalf.
               </blockquote>
               <hr/>
@@ -218,8 +229,8 @@
             </li>
             <li id="cli3" class="client-quote-item">
               <blockquote>
-                Having used HR Solutions NI, I can recommend the service as professional and effective.  You will get
-                a consultant that cares about your business.  From complex issues to the day to day matters that arise
+                Having used HR Solutions NI, I can recommend the service as professional and effective. You will get
+                a consultant that cares about your business. From complex issues to the day to day matters that arise
                 and need attention, HR Solutions NI always has my confidence.
               </blockquote>
               <hr/>
@@ -238,7 +249,7 @@
             </li>
             <li id="cli5" class="client-quote-item">
               <blockquote>
-                HR Solutions NI offers a practical service of HR assistance.  I can get HR advice as and when I need it.
+                HR Solutions NI offers a practical service of HR assistance. I can get HR advice as and when I need it.
                 From a quick phone call to someone who knows your business, to the onsite chairing of meetings on my
                 behalf, it works for my business.
               </blockquote>
@@ -249,8 +260,8 @@
             <li id="cli6" class="client-quote-item">
               <blockquote>
                 HR Solutions NI created bespoke contracts of employment for all our staff, keeping us up to date and
-                compliant.  The whole process was managed smoothly from start to finish with consultation provided
-                throughout.  The service is professional and I can rely on the Consultant to give me the right advice
+                compliant. The whole process was managed smoothly from start to finish with consultation provided
+                throughout. The service is professional and I can rely on the Consultant to give me the right advice
                 for the business.
               </blockquote>
               <hr/>
