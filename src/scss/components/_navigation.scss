@@ -1,6 +1,6 @@
 nav {
   &.mainNav {
-    ul {
+      ul {
       margin: 0;
       padding: 0;
       list-style: none;
@@ -21,7 +21,7 @@ nav {
       font-size: 0.95em;
       display: block;
       line-height: 60px;
-      padding: 0 20px;
+      padding: 0 15px;
       white-space: nowrap;
       border-width: 0;
       border-style: solid;
@@ -29,7 +29,9 @@ nav {
       color: #6a6c74;
       font-weight: 300;
       transition: color 0.4s ease-out;
-
+      @media only screen and (min-width: $breakpoint-large) {
+        padding: 0 20px;
+      }
       &:hover {
         color: #3e95e4;
       }

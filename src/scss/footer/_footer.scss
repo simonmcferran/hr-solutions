@@ -33,11 +33,14 @@ footer {
   &Base {
     height: 80px;
     border-top: 1px solid rgba(255, 255, 255, .1);
+    padding: 15px 0;
+
     a {
       color: #cccccc;
       font-weight: 400;
       transition: color 0.4s ease-out;
       text-decoration: none;
+
       &:hover {
         color: #ffffff;
         cursor: pointer;
@@ -46,15 +49,25 @@ footer {
   }
 
   &Copyright {
+
     p {
       color: #cccccc;
       font-size: 0.8em;
       font-weight: 300;
       margin: 0;
+      text-align: center;
+      @media only screen and (min-width: $breakpoint-med) {
+        text-align: left;
+      }
     }
   }
 
   &Social {
+    justify-content: center;
+    @media only screen and (min-width: $breakpoint-med) {
+      justify-content: flex-end;
+    }
+
     ul {
       list-style: none;
       display: flex;
@@ -75,6 +88,7 @@ footer {
 
   &Col {
     padding: 45px 0;
+
     img {
       width: 150px;
     }
@@ -96,6 +110,10 @@ footer {
     }
 
     &Two, &Three {
+      @media only screen and (max-width: $breakpoint-small) {
+        width: 100%;
+      }
+
       p {
         border-left: 3px solid #25272d;
         padding-left: 30px;
@@ -131,5 +149,17 @@ footer {
       }
     }
 
+    &Two {
+      @media only screen and (max-width: $breakpoint-small) {
+        margin-bottom: 0!important;
+      }
+    }
+
+    &Three {
+
+      @media only screen and (max-width: $breakpoint-small) {
+        margin-top: 0!important;
+      }
+    }
   }
 }

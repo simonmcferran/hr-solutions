@@ -34,21 +34,46 @@
       transition: color 0.4s ease-out;
       font-size: 0.9em;
       margin-right: 5px;
+      @media only screen and (max-width: $breakpoint-small) {
+        font-size: 1.1em;
+        color: #3e95e4;
+      }
+      }
+    a .txt {
+      @media only screen and (max-width: $breakpoint-small) {
+        display: none;
+      }
+    }
+    &--title {
+      @media only screen and (max-width: $breakpoint-med) {
+        display: none;
+      }
     }
   }
 
   &Brand {
     display: flex;
     height: 60px;
-
+    justify-content: center;
+    @media only screen and (min-width: $breakpoint-med) {
+      justify-content: flex-start;
+    }
     img {
       width: 200px;
     }
   }
 
   &Navigation {
-    display: flex;
+    display: none;
+    @media only screen and (min-width: $breakpoint-med) {
+      display: flex;
+    }
     flex-direction: row;
     justify-content: flex-end;
+    button {
+      @media only screen and (max-width: $breakpoint-large) {
+        display: none;
+      }
+    }
   }
 }

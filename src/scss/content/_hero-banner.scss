@@ -4,14 +4,20 @@
   background-repeat: no-repeat;
   background-size: cover;
   background-color: #292b32;
+
   h1 {
     color: #ffffff;
-    font-size: 3.3em;
+    font-size: 2.75em;
     font-weight: 400;
     line-height: 1.25;
     max-width: 530px;
     margin: 0 0 0.5em;
+    @media only screen and (min-width: $breakpoint-med) {
+      font-size: 3.3em;
+
+    }
   }
+
   h3 {
     font-size: 1.3em;
     color: white;
@@ -20,7 +26,12 @@
     line-height: 1.5;
     font-family: "Roboto", Arial, Tahoma, sans-serif;
   }
+
   .bannerInfo {
-    padding: 4em 0;
+    padding: 2em 0;
+    @media only screen and (min-width: $breakpoint-med) {
+      padding: 4em 0;
+
+    }
   }
 }
