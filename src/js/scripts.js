@@ -78,3 +78,9 @@ const thisYear = () => {
   document.write(`${today.getFullYear()}`);
 };
 
+window.onscroll = function () {
+  window.scrollY >= 45
+    ? document.getElementById("sticky-header").classList.add("is-stuck")
+    : document.getElementById("sticky-header").classList.remove("is-stuck")
+};
+

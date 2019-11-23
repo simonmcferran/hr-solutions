@@ -370,12 +370,19 @@ nav.mainNav a {
 .headerBrand {
   display: flex;
   height: 60px;
-  justify-content: center; }
+  justify-content: center;
+  position: relative; }
   @media only screen and (min-width: 48em) {
     .headerBrand {
       justify-content: flex-start; } }
   .headerBrand img {
     width: 200px; }
+  .headerBrand .mobileNavigation {
+    position: absolute;
+    left: -15px; }
+    @media only screen and (min-width: 48em) {
+      .headerBrand .mobileNavigation {
+        display: none; } }
 
 .headerNavigation {
   display: none;
@@ -387,6 +394,19 @@ nav.mainNav a {
   @media only screen and (max-width: 60em) {
     .headerNavigation button {
       display: none; } }
+
+.sticky-header-placeholder {
+  height: 76px;
+  background-color: white;
+  width: 100%; }
+
+#sticky-header {
+  background-color: rgba(255, 255, 255, 0.9); }
+  #sticky-header.is-stuck {
+    position: fixed;
+    top: 0;
+    z-index: 5;
+    width: 100%; }
 
 .heroBanner {
   background-image: url("../../assets/img/hero-banner.jpg");

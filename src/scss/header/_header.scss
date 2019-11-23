@@ -55,11 +55,19 @@
     display: flex;
     height: 60px;
     justify-content: center;
+    position: relative;
     @media only screen and (min-width: $breakpoint-med) {
       justify-content: flex-start;
     }
     img {
       width: 200px;
+    }
+    .mobileNavigation {
+      position: absolute;
+      left: -15px;
+      @media only screen and (min-width: $breakpoint-med) {
+        display: none;
+      }
     }
   }
 
@@ -75,5 +83,19 @@
         display: none;
       }
     }
+  }
+}
+.sticky-header-placeholder {
+  height: 76px;
+  background-color: white;
+  width: 100%;
+}
+#sticky-header{
+  background-color: rgba(255,255, 255,0.9);
+  &.is-stuck {
+    position: fixed;
+    top: 0;
+    z-index: 5;
+    width: 100%;
   }
 }

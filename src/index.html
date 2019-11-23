@@ -66,37 +66,39 @@
       </div>
     </div>
   </section>
-  <section>
-    <div class="container vertical-center">
-      <div class="row">
-        <div class="col-4">
-          <div class="headerBrand">
-            <div class="mobileNavigation">
-              <button id="mobNavBtn" onclick="toggleMobileNav()" class="hamburger hamburger--spring" type="button">
+  <div class="sticky-header-placeholder">
+    <section id="sticky-header">
+      <div class="container vertical-center">
+        <div class="row">
+          <div class="col-4">
+            <div class="headerBrand">
+              <div class="mobileNavigation">
+                <button id="mobNavBtn" onclick="toggleMobileNav()" class="hamburger hamburger--spring" type="button">
               <span class="hamburger-box">
                 <span class="hamburger-inner"></span>
               </span>
-              </button>
+                </button>
+              </div>
+              <img src="assets/img/HR-Solutions-Logo.svg">
             </div>
-            <img src="assets/img/HR-Solutions-Logo.svg">
           </div>
-        </div>
-        <div class="col-8 hidden-sm">
-          <div class="headerNavigation vertical-center">
-            <nav class="mainNav ">
-              <ul>
-                <li class="active"><a onclick="buttonClick('#who-we-are')" href="#">Who we are</a></li>
-                <li><a onclick="buttonClick('#what-we-do')" href="#">What we do</a></li>
-                <li><a onclick="buttonClick('#our-services')" href="#">Services we offer</a></li>
-                <li><a onclick="buttonClick('#our-clients')" href="#">Our Clients</a></li>
-              </ul>
-            </nav>
-            <button onclick="buttonClick('#contact-us')" class="buttonPrimary">Contact Us</button>
+          <div class="col-8 hidden-sm">
+            <div class="headerNavigation vertical-center">
+              <nav class="mainNav ">
+                <ul>
+                  <li class="active"><a onclick="buttonClick('#who-we-are')" href="#">Who we are</a></li>
+                  <li><a onclick="buttonClick('#what-we-do')" href="#">What we do</a></li>
+                  <li><a onclick="buttonClick('#our-services')" href="#">Services we offer</a></li>
+                  <li><a onclick="buttonClick('#our-clients')" href="#">Our Clients</a></li>
+                </ul>
+              </nav>
+              <button onclick="buttonClick('#contact-us')" class="buttonPrimary">Contact Us</button>
+            </div>
           </div>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
+  </div>
 </header>
 <section id="who-we-are" class="heroBanner">
   <div class="container vertical-center">
