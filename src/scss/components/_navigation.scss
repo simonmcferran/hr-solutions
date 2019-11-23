@@ -38,3 +38,36 @@ nav {
     }
   }
 }
+
+#mobileNavigationDropdown {
+  background: #ffffff;
+  width: 100%;
+  position: absolute;
+  transition: all 0.2s ease-out;
+  opacity: 0;
+  z-index: 5;
+  height: 0;
+  overflow: hidden;
+  &.is-active {
+    opacity: 0.95;
+    height: auto}
+  ul {
+    margin: 0;
+    padding-left: 23px;
+    list-style: none;
+    a {
+      text-decoration: none;
+      font-size: 0.95em;
+      display: block;
+      line-height: 60px;
+      padding: 0 15px 0 0;
+      white-space: nowrap;
+      border-width: 0;
+      border-style: solid;
+      border-color: rgba(0, 0, 0, .05);
+      color: #666666;
+      font-weight: 400;
+
+    }
+  }
+}

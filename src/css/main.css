@@ -236,6 +236,35 @@ nav.mainNav a {
   nav.mainNav a:hover {
     color: #3e95e4; }
 
+#mobileNavigationDropdown {
+  background: #ffffff;
+  width: 100%;
+  position: absolute;
+  transition: all 0.2s ease-out;
+  opacity: 0;
+  z-index: 5;
+  height: 0;
+  overflow: hidden; }
+  #mobileNavigationDropdown.is-active {
+    opacity: 0.95;
+    height: auto; }
+  #mobileNavigationDropdown ul {
+    margin: 0;
+    padding-left: 23px;
+    list-style: none; }
+    #mobileNavigationDropdown ul a {
+      text-decoration: none;
+      font-size: 0.95em;
+      display: block;
+      line-height: 60px;
+      padding: 0 15px 0 0;
+      white-space: nowrap;
+      border-width: 0;
+      border-style: solid;
+      border-color: rgba(0, 0, 0, 0.05);
+      color: #666666;
+      font-weight: 400; }
+
 .socialIcons {
   display: flex;
   justify-content: flex-end; }
@@ -401,7 +430,7 @@ nav.mainNav a {
   width: 100%; }
 
 #sticky-header {
-  background-color: rgba(255, 255, 255, 0.9); }
+  background-color: rgba(255, 255, 255, 0.95); }
   #sticky-header.is-stuck {
     position: fixed;
     top: 0;

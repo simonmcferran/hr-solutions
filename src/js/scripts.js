@@ -39,17 +39,18 @@ function scrollPageTo(to, duration = 500) {
   });
 }
 
-const buttonClick = (target) => {
-  window.scrollPageTo(target, 400)
+const buttonClick = (target, mobNav) => {
+  window.scrollPageTo(target, 400);
+  mobNav && toggleMobileNav();
 };
 
 function toggleMobileNav() {
   const mobNavBtn = document.getElementById("mobNavBtn");
   mobNavBtn.classList.toggle("is-active");
+  document.getElementById("mobileNavigationDropdown").classList.toggle("is-active")
 }
 
 const clientClick = (i, client) => {
-  console.log(client);
   const currClassList = i.classList;
   const arrQuote = Array.from(document.getElementsByClassName('client-quote-item'));
   const arrLogo = Array.from(document.getElementsByClassName('buttonInvisible'));
